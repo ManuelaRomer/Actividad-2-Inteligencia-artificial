@@ -30,11 +30,10 @@ class SistemaExpertoRutas:
                     mejor_camino, menor_tiempo = nueva_ruta, nuevo_tiempo
 
         return mejor_camino, menor_tiempo
-
-# ---- EJECUCIÓN DEL SISTEMA EXPERTO ----
+    
 sistema = SistemaExpertoRutas()
 
-origen, destino = "A", "B"
+origen, destino = "A", "E"
 ruta, tiempo = sistema.mejor_ruta(origen, destino)
 
 if ruta:
